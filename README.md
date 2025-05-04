@@ -1,6 +1,6 @@
-# Bry Delivery App
+# VieFood Delivery App
 
-Bry Delivery App is a React Native application designed for food delivery services. It includes features like restaurant browsing, order tracking, and user authentication. The app integrates with Firebase for backend services such as authentication, Firestore database, and real-time updates.
+VieFood Delivery App is a React Native application designed for food delivery services. It includes features like restaurant browsing, order tracking, and user authentication. The app integrates with Firebase for backend services such as authentication, Firestore database, and real-time updates.
 
 ---
 
@@ -33,22 +33,26 @@ Before you begin, ensure you have the following installed:
    cd bry-delivery-app
    ```
 2. **Install Dependencies**:
-   ``` npm install ```
+   ```bash
+    npm install
+   ```
 
-3. **Install Expo CLI (if not already installed)**:
-   ``` npm install -g expo-cli ```
+4. **Install Expo CLI (if not already installed)**:
+   ```bash
+    npm install -g expo-cli
+   ```
 
-4. **Set Up Firebase**:
+6. **Set Up Firebase**:
 
    - Go to **Firebase Console**
    - Create a new project
    - Enable Firestore Database and Authentication (Email/Password)
    - Add a new web app to your Firebase project and copy the Firebase configuration
 
-5. **Configure Firebase**:
+7. **Configure Firebase**:
 
    - Replace the content of config/firebaseConfig.js with your Firebase configuration:
-     // filepath: /config/firebaseConfig.js
+   // filepath: /config/firebaseConfig.js
    ```
    import { initializeApp } from "firebase/app";
    import { getAuth } from "firebase/auth";
@@ -67,5 +71,7 @@ Before you begin, ensure you have the following installed:
    export const auth = getAuth(app);
    export const firestore = getFirestore(app);
    ```
-6. **Run the App**:
-   - ``` npx expo start ```
+8. **Run the App**:
+   ```bash
+   npx expo start
+   ```
