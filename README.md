@@ -33,10 +33,10 @@ Before you begin, ensure you have the following installed:
    cd bry-delivery-app
    ```
 2. **Install Dependencies**:
-   npm install
+   ``` npm install ```
 
 3. **Install Expo CLI (if not already installed)**:
-   npm install -g expo-cli
+   ``` npm install -g expo-cli ```
 
 4. **Set Up Firebase**:
 
@@ -49,9 +49,10 @@ Before you begin, ensure you have the following installed:
 
    - Replace the content of config/firebaseConfig.js with your Firebase configuration:
      // filepath: /config/firebaseConfig.js
-     import { initializeApp } from "firebase/app";
-     import { getAuth } from "firebase/auth";
-     import { getFirestore } from "firebase/firestore";
+   ```
+   import { initializeApp } from "firebase/app";
+   import { getAuth } from "firebase/auth";
+   import { getFirestore } from "firebase/firestore";
 
    const firebaseConfig = {
    apiKey: "YOUR_API_KEY",
@@ -65,6 +66,6 @@ Before you begin, ensure you have the following installed:
    const app = initializeApp(firebaseConfig);
    export const auth = getAuth(app);
    export const firestore = getFirestore(app);
-
+   ```
 6. **Run the App**:
-   - npx expo start
+   - ``` npx expo start ```
